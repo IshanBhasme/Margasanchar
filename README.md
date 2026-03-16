@@ -1,73 +1,131 @@
-# Welcome to your Lovable project
+🚍 MargaSanchār – Smart Public Transport Tracking & Prediction System
 
-## Project info
+MargaSanchār is a mobile-first smart public transport tracking prototype designed to improve accessibility and travel planning in Tier-2 and Tier-3 cities.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The application helps passengers plan trips, track buses, check crowd levels, and access transport information even without internet connectivity through simulated SMS-based queries.
 
-## How can I edit this code?
+🌍 Project Vision
 
-There are several ways of editing your application.
+Public transport systems in many developing cities lack real-time tracking and accessible information systems.
 
-**Use Lovable**
+MargaSanchār aims to provide a simple, inclusive, and scalable digital transport assistant that allows commuters to easily access bus information, plan routes, and receive updates using smartphones or even basic SMS services.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+✨ Key Features
+🏠 Home Dashboard
 
-Changes made via Lovable will be committed automatically to this repo.
+Simple mobile-first interface
 
-**Use your preferred IDE**
+Quick access to:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Plan a Trip
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Scan QR for bus stop information
 
-Follow these steps:
+Offline SMS query simulation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🚍 Trip Planning
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Select origin and destination
 
-# Step 3: Install the necessary dependencies.
-npm i
+Get best bus suggestion
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+View ETA and crowd level
 
-**Edit a file directly in GitHub**
+📋 Bus List
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Displays available buses
 
-**Use GitHub Codespaces**
+Shows:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Bus number
 
-## What technologies are used for this project?
+Estimated arrival time
 
-This project is built with:
+Crowd level
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Route
 
-## How can I deploy this project?
+🗺️ Live Bus Tracking (Simulation)
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Simulated route map
 
-## Can I connect a custom domain to my Lovable project?
+Moving bus icon
 
-Yes, you can!
+Displays next stop and ETA
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+📷 QR Stop Scanner (Simulation)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Scan a QR code at bus stops
+
+Instantly see buses arriving at that stop
+
+📡 Offline SMS Mode
+
+Designed for low connectivity areas.
+
+Users can simulate SMS queries such as:
+
+Enter station code
+
+Select direction
+
+Receive bus information via chat-style interface
+
+🧠 Problem Statement
+
+Many public transport systems suffer from:
+
+Lack of real-time information
+
+Poor accessibility for non-smartphone users
+
+Unpredictable waiting times
+
+Overcrowding without visibility
+
+MargaSanchār solves this by combining:
+
+Trip planning
+
+Real-time bus simulation
+
+QR stop information
+
+Offline SMS interaction
+
+🛠️ Technologies Used
+
+React JS
+
+Vite
+
+TypeScript
+
+Tailwind CSS
+
+shadcn UI components
+
+📱 Design Principles
+
+Mobile-first responsive layout
+
+Clean minimal interface
+
+Blue/green public transport theme
+
+Smooth navigation without page reloads
+
+🏗️ Project Structure
+src
+ ├ components
+ │   ├ Home
+ │   ├ PlanTrip
+ │   ├ BusList
+ │   ├ LiveMap
+ │   ├ ScanQR
+ │   ├ OfflineSMS
+ │   └ BusInfoModal
+ │
+ ├ App.tsx
+ ├ main.tsx
+ └ index.css
